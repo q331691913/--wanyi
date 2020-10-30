@@ -12,20 +12,20 @@
 <body>
     <!-- 版心 -->
     <div class="layui-main">
-        <img src="/assets/images/logo.png" alt="">
+        <img src="/day1/assets/images/logo.png" alt="">
     </div>
     <!-- 登录模块 -->
     <div class="loginAndRegBox">
         <div class="title-img"></div>
         <div class="login-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="" id="form_login">
                 <div class="layui-form-item dingwei">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input type="text" name="title" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item dingwei">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="title" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
                 </div>
 
                 <div class="layui-form-item">
@@ -37,19 +37,19 @@
             </form>
         </div>
         <div class="reg-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="" id="form_reg">
                 <div class="layui-form-item dingwei">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input type="text" name="title" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item dingwei">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="title" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
 
                 </div>
                 <div class="layui-form-item dingwei">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="title" required lay-verify="required|pwd" placeholder="请再次输入密码" autocomplete="off" class="layui-input">
+                    <input type="password" name="title" required lay-verify="required|pwd|repwd" placeholder="请再次输入密码" autocomplete="off" class="layui-input">
 
                 </div>
                 <div class="layui-form-item">
