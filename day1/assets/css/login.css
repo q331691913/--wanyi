@@ -23,6 +23,29 @@ body {
     background: url(../images/login_title.png) no-repeat center;
 }
 
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.layui-form {
+    padding: 0 30px;
+}
+
 .reg-box {
     display: none;
+}
+
+.dingwei {
+    position: relative;
+}
+
+.dingwei i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.layui-input {
+    padding: 0 35px;
 }
