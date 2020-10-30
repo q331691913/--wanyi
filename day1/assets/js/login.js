@@ -20,12 +20,12 @@ $(function() {
     })
     $('#form_reg').on('submit', function(e) {
         e.preventDefault()
-        $.post('http://ajax.frontend.itheima.net/api/reguser', { username: $('#form_reg [name=username]').val(), password: $("#form_reg [name=password]").val() },
+        $.post('/api/reguser', { username: $('#form_reg [name=username]').val(), password: $("#form_reg [name=password]").val() },
             function(res) {
                 if (res.status !== 0) {
                     return layer.msg(res.message)
                 }
-                layer.msg('注册成功，请登录哦！')
+                layer.msg('注册成功，请登录哦！', { icon: 6 });
                 $("#link_login").click()
             })
 
@@ -36,13 +36,14 @@ $(function() {
         console.log($(this).serialize());
         $.ajax({
             type: 'POST',
-            url: 'http://ajax.frontend.itheima.net/api/login',
+            url: '/api/login',
             data: $(this).serialize(),
             success(res) {
                 if (res.status !== 0) {
                     return layer.msg('登录失败')
                 }
                 layer.msg('登录成功')
+                localStorage.setItem = ('token', res.token)
                 location.href = './index.html'
             }
         })
